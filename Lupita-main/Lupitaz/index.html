@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Lupita | Panadería</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo"><span>La Lupita</span><small>Panadería & Pastelería</small></div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <ul id="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="carrito.html">🛒 Carrito <span id="contador">0</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <p class="tag">PAN ARTESANAL • RECIÉN HORNEADO</p>
+    <h1>El sabor que hace especial cada día</h1>
+    <p>En La Lupita preparamos panes, dulces y bebidas con cariño para toda la familia.</p>
+    <a class="btn" href="productos.html">Ver productos</a>
+  </div>
+</section>
+
+<section class="section favorites">
+  <p class="section-tag">SABORES QUE ENAMORAN</p>
+  <h2>⭐ Nuestros favoritos</h2>
+  <div class="cards">
+    <article class="card"><img class="product-img" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80" alt="Croissant"><h3>Croissant</h3><p>Hojaldre dorado y delicioso.</p><strong>S/ 3.50</strong><button onclick="agregar('Croissant',3.50)">Agregar</button></article>
+    <article class="card"><img class="product-img" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80" alt="Pan francés"><h3>Pan francés</h3><p>Crujiente por fuera, suave por dentro.</p><strong>S/ 0.50</strong><button onclick="agregar('Pan francés',0.50)">Agregar</button></article>
+    <article class="card"><img class="product-img" src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=700&q=80" alt="Donas"><h3>Donas</h3><p>Suaves y cubiertas con chocolate.</p><strong>S/ 2.50</strong><button onclick="agregar('Donas',2.50)">Agregar</button></article>
+    <article class="card"><img class="product-img" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Torta"><h3>Tortas</h3><p>Perfectas para tus celebraciones.</p><strong>Desde S/ 35.00</strong><button onclick="agregar('Torta',35)">Agregar</button></article>
+  </div>
+</section>
+
+<section class="about" id="nosotros">
+  <div class="about-intro">
+    <p class="section-tag">TRADICIÓN Y CALIDAD</p>
+    <h2>❤️ Hecho con cariño</h2>
+    <p>La Lupita es una panadería dedicada a ofrecer productos frescos, deliciosos y preparados con ingredientes de calidad.</p>
+    <p>Queremos que cada visita tenga ese aroma y sabor de una panadería tradicional.</p>
+    <div class="about-features">
+      <span>🥖 Pan recién horneado</span>
+      <span>✨ Ingredientes de calidad</span>
+    </div>
+  </div>
+  <div class="about-box">
+    <img src="img_lupita.jpeg" alt="La Lupita Panadería y Pastelería" class="about-image">
+    <div class="freshness-badge">Frescura todos los días</div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <h2>📍 Visítanos</h2>
+  <p>Av. Principal 123 · La Joya, Arequipa</p>
+  <p>📞 999 999 999 · ✉️ contacto@lalupita.com</p>
+</section>
+</main>
+
+<footer><p>© 2026 La Lupita · Panadería artesanal</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
